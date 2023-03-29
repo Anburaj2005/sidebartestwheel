@@ -1,172 +1,134 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+  <title>Cloud Automation Testing Tool for Web and Mobile
+  Applications</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/login-styles.css" rel="stylesheet">
+   <link href="css/layout.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/all.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-    <script src="js/bootstrap.min.js"></script>
-
+  <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="sidebar ">
-
-        <nav class="navbar navbar-expand-md navbar-light ">
-            <div class="container-fluid d-colum ">
-                <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse document-icon" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 document-icon">
-                        <li class="nav-item">
-                            <a href="">
-                                <i class="fa-sharp fa-solid fa-user fa-color ps-4"></i>
-                                <p class="icon-text ps-2"> Users</p>
-
-                        </li>
-                        <li class="nav-item">
-                            <a href="">
-                                <i class="fa-sharp fa-solid fa-database fa-color ps-4"></i>
-                                <p class="icon-text">Application</p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="">
-                                <i class="fa-solid fa-solid fa-file fa-color ps-4"></i>
-                                <p class="icon-text">Documents</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="">
-                                <i class="fa-solid fa-briefcase fa-color ps-4"></i>
-                                <p class="icon-text">Test Results</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href=""> <i class="fa-solid fa-coins fa-color ps-4"></i>
-                                <p class="icon-text">API Testing</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="">
-                                <i class="fa-solid fa-regular fa-gear fa-color fa-color ps-4"></i>
-                                <p class="icon-text">Selenium Functions</p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href=""> <i class="fa-solid fa-regular fa-gear fa-color fa-color ps-4"></i>
-                                <p class="icon-text">Selenium Functions</p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="">
-                                <i class="fa-solid fa-regular fa-gear fa-color fa-color ps-4"></i>
-                                <p class="icon-text">Selenium Functions</p>
-                            </a>
-                        </li>
 
 
-                    </ul>
-
-                </div>
-            </div>
+<div class="layout">
+    <div class="sidemenu-navbar">
+        <nav class="sidemenu-navbar-list">
+            <ul class="menu-scroll">
+            <a href="#" class="sidemenu-navbar-item"><li><i class="fa fa-user-o edit-font" aria-hidden="true"></i>
+           Users </li></a>
+            <a href="#" class="sidemenu-navbar-item active"><li><i class="fa fa-list-alt edit-font" aria-hidden="true"></i> Application</li></a>
+            <a href="#" class="sidemenu-navbar-item"><li><i class="fa fa-file-o edit-font" aria-hidden="true"></i> Documents</li> </a>
+            <a href="#" class="sidemenu-navbar-item"><li><i class="fa fa-briefcase edit-font" aria-hidden="true"></i> Test Results</li> </a>
+            <a href="#" class="sidemenu-navbar-item"><li><i class="fa fa-laptop edit-font" aria-hidden="true"></i> API Testing</li> </a>
+            <a href="#" class="sidemenu-navbar-item"><li><i class="fa fa-cog edit-font" aria-hidden="true"></i>Selenium Fuctions</li> </a>
+            </ul>
+            <ul class="fixed-bottom">
+          <a href="#" class="sidemenu-navbar-item"><li><i class="fa fa-comments edit-font" aria-hidden="true"></i> Feedback</li> </a>
+          <div class="nav-item dropdown">
+          <a  class="sidemenu-navbar-item" data-bs-toggle="dropdown"><li><i class="fa fa-question-circle edit-font" aria-hidden="true"></i> Help </li></a>
+          <ul class="dropdown-menu shadow border-0">
+   <li><a class="dropdown-item pt-2" href="">Upgrade Now</a></li>
+    <li><a class="dropdown-item pt-2" href="">Video Tutorial</a></li>
+  <li><a class="dropdown-item pt-2" href="">FAQs</a></li>
+ 
+  </ul>
+</div> <a href="#" class="sidemenu-navbar-item"><li><i class="fa fa-info-circle edit-font" aria-hidden="true"></i> TestWheel Info </li></a>
+            </ul>
         </nav>
-
-
-        <nav class="navbar navbar-expand-md navbar-light ">
-            <div class="container-fluid ">
-                <div class="row align-items-end">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a href=""> <i class="fa-sharp fa-solid fa-comments fa-color ps-4 "></i>
-                                    <p class="icon-text ps-2">Feedback</p>
-                                </a>
-                            </li>
-
-
-                            <li class="nav-item dropdown help-icon">
-                                <a class="nav-link " href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-question fa-color ps-4  "></i>
-                                    <p class="icon-text ps-2 ">Help</p>
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Upgrade Now</a></li>
-                                    <li><a class="dropdown-item" href="#">Video Tutorial</a></li>
-                                    <li><a class="dropdown-item" href="#">FAQS</a></li>
-                                </ul>
-                            </li>
-
-
-
-                            <li class="nav-item">
-                                <a>
-                                    <i class="fa-solid fa-circle-info fa-color ps-4"></i>
-                                    <p class="icon-text ps-2"> Testwheel info</p>
-                                </a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-
     </div>
-    <div class="content">
-        <div class="fixed-header border-bottom ">
-            <div class="row  py-3 ">
-                <div class="col-6 col-md-6 pt-3 ps-5">
-                    <a class="navbar-brand" href="#">
-                        <img alt="Testwheel Logo" src="./images/logo.webp" />
-                    </a>
-                </div>
-                <div class="col-6 col-md-6  d-flex justify-content-end">
-                    <nav class="navbar navbar-expand ">
-                        <div class="container-fluid ">
-                            <ul class="navbar-nav pt-2">
-
-
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="fa-solid fa-house fa-color"></i>
-                                        <i class="fa-sharp fa-regular fa-user fa-color pe-2"></i>
-                                        <span class="logout-text"> Welcome Liza</span>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Account Setting</a></li>
-                                        <li><a class="dropdown-item" href="#">Logout</a></li>
-
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-
+    <section class="body-content new-app">
+        <div class="fixed-header border-bottom">
+            <div class="row">
+                <div class="col-md-6"><img class="logo me-4" src="images/logo.webp" alt="TestWheel-Logo" width="270px" height="80px"><a  class="sidemenu-toggle d-lg-none align-self-center"><i class="fa fa-bars"></i></a> </div>
+                <div class="col-md-6 text-end align-self-center"> <a href="#" class=""><i class="fa fa-home edit-font" aria-hidden="true"></i></a>
+          <div class="btn-group">
+  <a type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+   <i class="fa fa-user edit-font" aria-hidden="true"></i>  Welcome Liza!
+  </a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Account Settings</a></li>
+    <li><a class="dropdown-item" href="#">Logout</a></li>
+  </ul>
+  
+</div>
+      </div>
             </div>
+            </div>
+        <div class="main-content">
+           <div class="container-fluid pt-4 ps-md-5">
+            <h3 class="text-testing fw-bold">Create a new application</h3>
+            <div class="row">
+                <div class="col-md-8">
+                     <div class="row pt-4">
+                <div class="form-group mb-lg-4">
+    <label class="fw-bold pb-2">Application Name</label>
+    <input type="text" class="form-control form-input" placeholder="">
+   </div>
+   <div class="form-group mb-lg-4">
+    <label class="fw-bold pb-2">Description</label>
+    <input type="text" class="form-control form-input" placeholder="">
+   </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                <div class="form-group mb-lg-4">
+    <label class="fw-bold pb-2">Type</label>
+    <select class="form-select form-input">
+  <option selected="">Select</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+   </div>
+</div>
+<div class="col-md-6">
+   <div class="form-group mb-lg-4">
+    <label class="fw-bold pb-2">Environment Selection</label>
+   <select class="form-select form-input">
+  <option selected="">Select</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+   </div>
+</div>
+            </div>
+            <div class="mt-4">
+            <button type="submit" class="btn btn-login p-2 fw-bold rounded-3 me-4 mb-3">Register</button>
+            <button type="submit" class="btn btn-back p-2 fw-bold rounded-3 mb-3">Cancel</button>
+          </div>
+                </div>
+            </div>
+           
+            
+        </div> 
         </div>
-        <section class="body-content ">
-            <p>textwheel</p>
-        </section>
-    </div>
+    
+</section>
+
 
 </body>
 
+<script type="text/javascript">
+    const responsiveView = window.matchMedia("(max-width: 990px )");
+$(document).ready(function () {
+    $(".sidemenu-toggle").click(function () {
+        if (responsiveView.matches) {
+            $(".sidemenu-navbar").toggleClass("mobile-show");
+        } else {
+           
+        }
+    });
+});
+
+
+</script>
 </html>
+
+
